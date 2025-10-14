@@ -1,11 +1,18 @@
-import express,{Router} from 'express';
+// import express,{Router} from 'express';
 
-const router = Router();
+// const router = Router();
 
-router.get('/', (req,res)=>{
-    res.status(200).json({
-        message: 'user authentication'
-    })
-});
+// // To get the collection of User, 
+// router.get('/users', (req, res)=>{
 
-export default router;
+// });
+
+// // Register API
+// router.post('/register', (req, res)=>{});
+
+// // 
+// router.post('/login', (req, res)=>{});
+// //
+// router.post('/logout', (req, res)=>{});
+
+// export default router;
