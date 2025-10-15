@@ -1,11 +1,9 @@
-import express,{Router} from 'express';
+import {Router} from 'express';
+import { createTodo, deleteTodo, getTodo, getTodos, updateTodo } from '../../controllers/todoController';
 
 const router = Router();
 
-router.get('/', (req,res)=>{
-    res.status(200).json({
-        message: 'Get all todo list'
-    })
-});
+router.route('/').get(getTodos).post(createTodo);
+router.route('/:id').get(getTodo).put(updateTodo).delete(deleteTodo);
 
 export default router;
